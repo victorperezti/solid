@@ -1,4 +1,4 @@
-﻿namespace Daycoval.Solid.Domain.Entidades
+﻿namespace Daycoval.Solid.Domain.Entities
 {
     public enum FormaPagamentoCartao
     {
