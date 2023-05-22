@@ -1,5 +1,5 @@
 ﻿using System;
-using Daycoval.Solid.Domain.Entidades;
+using Daycoval.Solid.Domain.Entities;
 
 namespace Daycoval.Solid.Domain.Services
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net.Mail;
 using System.Runtime.InteropServices;
-using Daycoval.Solid.Domain.Entidades;
+using Daycoval.Solid.Domain.Entities;
 
 namespace Daycoval.Solid.Domain.Services
 {
