@@ -1,13 +1,14 @@
-﻿namespace Daycoval.Solid.Domain.Services
-{
-    public class SmsService
-    {
-        public string Celular { get; set; }
-        public string Mensagem { get; set; }
+﻿using Daycoval.Solid.Domain.Entities.DomainObject;
+using Daycoval.Solid.Domain.Services.Interfaces;
 
-        public void EnviarSms()
+namespace Daycoval.Solid.Domain.Services
+{
+    public class SmsService : ISmsService
+    {
+        public void EnviarSms(Telefone celular, string mensagem)
         {
             //Este método não precisa ser implementado.
+            throw new System.NotImplementedException();
         }
     }
 }

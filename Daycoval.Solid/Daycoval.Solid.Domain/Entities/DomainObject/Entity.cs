@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Daycoval.Solid.Domain.Entities
+namespace Daycoval.Solid.Domain.Entities.DomainObject
 {
     public class Entity
     {
 
-        public Entity(Guid id)
+        public Entity()
         {
             Id = Guid.NewGuid();
         }

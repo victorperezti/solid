@@ -1,31 +1,29 @@
-﻿using System;
-using Daycoval.Solid.Domain.Entities;
+﻿using Daycoval.Solid.Domain.Entities.DomainObject;
+using Daycoval.Solid.Domain.Entities.Pagamento;
+using Daycoval.Solid.Domain.Services.Interfaces;
+using System;
 
 namespace Daycoval.Solid.Domain.Services
 {
-    public class GatewayPagamentoService : IDisposable
+    public class GatewayPagamentoService : IPagamentoService
     {
-        public string Login { get; set; }
-        public string Senha { get; set; }
-        public string NomeImpresso { get; set; }
-        public decimal Valor { get; set; }
-        public int MesExpiracao { get; set; }
-        public int AnoExpiracao { get; set; }
-        public FormaPagamentoCartao FormaPagamentoCartao { get; set; }
+        private readonly string _login;
+        private readonly string _senha;
 
-        public void EfetuarPagamento()
+        public GatewayPagamentoService(string login, string senha)
+        {
+            _login = login;
+            _senha = senha;
+        }
+
+
+        public void EfetuarPagamento(Carrinho carrinho, Pagamento pagamento)
         {
             //Não é necessário implementar este método.
+            //throw new NotImplementedException();
+            carrinho.Pagar();
         }
 
-        public void Dispose()
-        {
-            Login = string.Empty;
-            Senha = string.Empty;
-            NomeImpresso = string.Empty;
-            Valor = 0M;
-            MesExpiracao = 0;
-            AnoExpiracao = 0;
-        }
+
     }
 }
