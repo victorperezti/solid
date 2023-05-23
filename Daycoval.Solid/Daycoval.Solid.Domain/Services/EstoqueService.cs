@@ -14,12 +14,12 @@ namespace Daycoval.Solid.Domain.Services
 
         public void SolicitarProduto(List<Produto> produto)
         {
-            throw new System.NotImplementedException();
+            //Este método não precisa ser implementado.
         }
 
         public void BaixarEstoque(List<Produto> produto)
         {
-            throw new System.NotImplementedException();
+            //Este método não precisa ser implementado.
         }
     }
 }

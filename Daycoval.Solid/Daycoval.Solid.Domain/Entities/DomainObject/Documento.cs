@@ -4,11 +4,7 @@ namespace Daycoval.Solid.Domain.Entities.DomainObject
 {
     public class Documento
     {
-        public Documento(string numero, ETipoDocumento tipoDocumento)
-        {
-            Numero = numero;
-            TipoDocumento = tipoDocumento;
-        }
+        public Documento(string numero) => Numero = numero;
 
         public string Numero { get; private set; }
         public ETipoDocumento TipoDocumento { get; private set; }

@@ -4,9 +4,9 @@ namespace Daycoval.Solid.Domain.Entities.DomainObject
 {
     public class Telefone
     {
-        public Telefone(string celular, ETipoTelefone tipoTelefone)
+        public Telefone(string numero, ETipoTelefone tipoTelefone)
         {
-            Numero = celular;
+            Numero = numero;
             TipoTelefone = tipoTelefone;
         }
 

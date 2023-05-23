@@ -9,13 +9,13 @@ namespace Daycoval.Solid.Domain.Tests.Produto
         [InlineData("Feijão", 7.50, 4, 0.375)]
         public void CalcularValorImpostoDoProdutoAlimento(string nome, decimal valor, int quantidade, decimal valorImpostoEsperado)
         {
-            //Dado
+            //Arrange(Dado)
             var produto = new ProdutoAlimento(nome, valor, quantidade);
 
-            //Quando
+            //Act(Quando)
             produto.CalcularValorImposto();
 
-            //Então
+            //Assert(Então)
             Assert.Equal(valorImpostoEsperado, produto.CalcularValorImposto());
         }
 
@@ -24,13 +24,13 @@ namespace Daycoval.Solid.Domain.Tests.Produto
         [InlineData("Monitor", 500, 4, 0)]
         public void CalcularValorImpostoDoProdutoEletronico(string nome, decimal valor, int quantidade, decimal valorImpostoEsperado)
         {
-            //Dado
+            //Arrange(Dado)
             var produto = new ProdutoEletronico(nome, valor, quantidade);
 
-            //Quando
+            //Act(Quando)
             produto.CalcularValorImposto();
 
-            //Então
+            //Assert(Então)
             Assert.Equal(valorImpostoEsperado, produto.CalcularValorImposto());
         }
 
@@ -39,13 +39,13 @@ namespace Daycoval.Solid.Domain.Tests.Produto
         [InlineData("Bala", 1.10, 10, 0.110)]
         public void CalcularValorImpostoDoProdutoSuperfulo(string nome, decimal valor, int quantidade, decimal valorImpostoEsperado)
         {
-            //Dado
+            //Arrange(Dado)
             var produto = new ProdutoSuperfluo(nome, valor, quantidade);
 
-            //Quando
+            //Act(Quando)
             produto.CalcularValorImposto();
 
-            //Então
+            //Assert(Então)
             Assert.Equal(valorImpostoEsperado, produto.CalcularValorImposto());
         }
     }
