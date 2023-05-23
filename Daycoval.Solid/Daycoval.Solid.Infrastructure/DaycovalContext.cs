@@ -1,17 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Daycoval.Solid.Infrastructure
+namespace Daycoval.Solid.Infrastructure;
+
+public class DaycovalContext : DbContext
 {
-    public class DaycovalContext : DbContext
+    public DaycovalContext(DbContextOptions options) : base(options)
     {
-        public DaycovalContext(DbContextOptions options) : base(options)
-        {
-        }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        { }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        { }
     }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    { }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    { }
 }
