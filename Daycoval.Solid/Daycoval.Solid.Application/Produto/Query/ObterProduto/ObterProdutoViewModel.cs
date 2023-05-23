@@ -1,9 +1,8 @@
-﻿namespace Daycoval.Solid.Application.Produto.Query.ObterProduto
+﻿namespace Daycoval.Solid.Application.Produto.Query.ObterProduto;
+
+public class ObterProdutoViewModel
 {
-    public class ObterProdutoViewModel
-    {
-        public string? Descricao { get; set; }
-        public decimal Valor { get; set; }
-        public int Quantidade { get; set; }
-    }
+    public string? Descricao { get; set; }
+    public decimal Valor { get; set; }
+    public int Quantidade { get; set; }
 }
