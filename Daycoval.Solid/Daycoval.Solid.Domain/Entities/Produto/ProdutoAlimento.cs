@@ -4,8 +4,8 @@ namespace Daycoval.Solid.Domain.Entities.Produto
 {
     public class ProdutoAlimento : Produto
     {
-        public ProdutoAlimento(string descricao, decimal valor, int quantidade, ETipoProduto tipoProduto)
-            : base(descricao, valor, quantidade, tipoProduto)
+        public ProdutoAlimento(string descricao, decimal valor, int quantidade)
+            : base(descricao, valor, quantidade)
         {
         }
 
@@ -13,7 +13,7 @@ namespace Daycoval.Solid.Domain.Entities.Produto
         {
             // Lógica de cálculo de imposto para produtos alimentícios
             // Retorna o valor do imposto calculado
-            decimal valorImposto = 0;
+            decimal valorImposto = 0.05M * Valor;
 
             return valorImposto;
         }

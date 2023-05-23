@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Daycoval.Solid.Domain.Entities.Enums
+﻿namespace Daycoval.Solid.Domain.Entities.Enums
 {
     public enum ETipoTelefone
     {

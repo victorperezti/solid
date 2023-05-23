@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Daycoval.Solid.Domain\Daycoval.Solid.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

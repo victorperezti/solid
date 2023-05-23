@@ -1,7 +1,6 @@
 ﻿using Daycoval.Solid.Domain.Entities.DomainObject;
 using Daycoval.Solid.Domain.Entities.Pagamento;
 using Daycoval.Solid.Domain.Services.Interfaces;
-using System;
 
 namespace Daycoval.Solid.Domain.Services
 {
@@ -16,14 +15,11 @@ namespace Daycoval.Solid.Domain.Services
             _senha = senha;
         }
 
-
         public void EfetuarPagamento(Carrinho carrinho, Pagamento pagamento)
         {
             //Não é necessário implementar este método.
             //throw new NotImplementedException();
             carrinho.Pagar();
         }
-
-
     }
 }

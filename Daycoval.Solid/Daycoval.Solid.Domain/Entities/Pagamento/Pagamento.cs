@@ -1,6 +1,6 @@
-﻿using System;
-using Daycoval.Solid.Domain.Entities.DomainObject;
+﻿using Daycoval.Solid.Domain.Entities.DomainObject;
 using Daycoval.Solid.Domain.Entities.Enums;
+using System;
 
 namespace Daycoval.Solid.Domain.Entities.Pagamento
 {
@@ -20,6 +20,5 @@ namespace Daycoval.Solid.Domain.Entities.Pagamento
         public decimal TotalPago { get; private set; }
         public string Pagador { get; private set; }
         public EFormaPagamento FormaPagamento { get; private set; }
-
     }
 }

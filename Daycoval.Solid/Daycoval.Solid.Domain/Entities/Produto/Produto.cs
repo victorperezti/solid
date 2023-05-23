@@ -5,12 +5,11 @@ namespace Daycoval.Solid.Domain.Entities.Produto
 {
     public abstract class Produto : Entity
     {
-        protected Produto(string descricao, decimal valor, int quantidade, ETipoProduto tipoProduto)
+        protected Produto(string descricao, decimal valor, int quantidade)
         {
             Descricao = descricao;
             Valor = valor;
             Quantidade = quantidade;
-            TipoProduto = tipoProduto;
         }
 
         public string Descricao { get; set; }
@@ -19,6 +18,5 @@ namespace Daycoval.Solid.Domain.Entities.Produto
         public ETipoProduto TipoProduto { get; set; }
 
         public abstract decimal CalcularValorImposto();
-
     }
 }

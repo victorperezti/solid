@@ -1,6 +1,6 @@
-﻿using System;
+﻿using Daycoval.Solid.Domain.Services.Interfaces;
+using System;
 using System.Collections.Generic;
-using Daycoval.Solid.Domain.Services.Interfaces;
 
 namespace Daycoval.Solid.Domain.Entities.DomainObject
 {
@@ -37,7 +37,7 @@ namespace Daycoval.Solid.Domain.Entities.DomainObject
             {
                 throw new InvalidOperationException("A forma de pagamento não foi definida.");
             }
-            
+
             _foiPago = true;
         }
 

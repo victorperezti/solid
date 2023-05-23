@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Daycoval.Solid.Domain.Entities.DomainObject
+﻿namespace Daycoval.Solid.Domain.Entities.DomainObject
 {
     public class Email
     {

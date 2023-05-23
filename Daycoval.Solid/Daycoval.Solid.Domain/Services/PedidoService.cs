@@ -31,8 +31,6 @@ namespace Daycoval.Solid.Domain.Services
 
             if (notificarClienteSms)
                 _smsService.EnviarSms(carrinho.Cliente.Telefone, "Obrigado por efetuar sua compra conosco.");
-
         }
-
     }
 }

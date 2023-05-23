@@ -35,5 +35,4 @@ namespace Daycoval.Solid.Domain.Entities.Pagamento
             Cvv = cvv;
         }
     }
-
 }

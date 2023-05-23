@@ -1,6 +1,4 @@
-﻿using Daycoval.Solid.Domain.Entities.DomainObject;
-
-namespace Daycoval.Solid.Domain.Services.Interfaces
+﻿namespace Daycoval.Solid.Domain.Services.Interfaces
 {
     public interface IEmailService
     {

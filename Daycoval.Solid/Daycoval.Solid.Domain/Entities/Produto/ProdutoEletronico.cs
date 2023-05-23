@@ -4,8 +4,8 @@ namespace Daycoval.Solid.Domain.Entities.Produto
 {
     public class ProdutoEletronico : Produto
     {
-        public ProdutoEletronico(string descricao, decimal valor, int quantidade, ETipoProduto tipoProduto)
-            : base(descricao, valor, quantidade, tipoProduto) { }
+        public ProdutoEletronico(string descricao, decimal valor, int quantidade)
+            : base(descricao, valor, quantidade) { }
 
         public override decimal CalcularValorImposto()
         {

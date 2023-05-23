@@ -17,8 +17,6 @@ namespace Daycoval.Solid.Domain.Entities.Pagamento
         public string NumeroCartao { get; private set; }
         public int Cvv { get; private set; }
 
-
-
         public void SetNomeTitular(string nome)
         {
             // Adicionar validações, se necessário
@@ -37,5 +35,4 @@ namespace Daycoval.Solid.Domain.Entities.Pagamento
             Cvv = cvv;
         }
     }
-
 }

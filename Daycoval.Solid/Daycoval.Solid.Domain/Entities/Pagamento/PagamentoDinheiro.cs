@@ -19,6 +19,4 @@ namespace Daycoval.Solid.Domain.Entities.Pagamento
             ValorRecebido = valor;
         }
     }
-
-
 }
